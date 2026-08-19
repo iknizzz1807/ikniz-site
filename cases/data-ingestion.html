@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Case Study: Enterprise Data Ingestion - Eliminating AI hallucinations for a UK startup with a multi-stage RAG pipeline, layout-aware semantic chunking, and multi-tenant Qdrant vector search." />
-    <meta name="keywords" content="RAG pipeline, data ingestion, Qdrant, vector search, semantic chunking, AI hallucinations, FastAPI, Next.js, multi-tenant, document parsing" />
+    <meta name="description" content="Case Study: Enterprise Data Ingestion - Grounding RAG answers for a UK startup with a multi-stage pipeline, layout-aware semantic chunking, and multi-tenant Qdrant vector search." />
+    <meta name="keywords" content="RAG pipeline, data ingestion, Qdrant, vector search, semantic chunking, hallucination reduction, FastAPI, Next.js, multi-tenant, document parsing" />
     <meta name="author" content="Thong Nguyen" />
     <link rel="canonical" href="https://ikniz.id.vn/cases/data-ingestion.html" />
     <meta property="og:title" content="Enterprise Data Ingestion Pipeline | B2B Case Study | Thong Nguyen" />
@@ -18,13 +18,13 @@
     <meta property="og:site_name" content="Thong Nguyen Portfolio" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Enterprise Data Ingestion Pipeline | B2B Case Study" />
-    <meta name="twitter:description" content="Eliminating AI hallucinations with layout-aware semantic chunking and multi-tenant vector search for a UK startup." />
+    <meta name="twitter:description" content="Reducing AI hallucinations with layout-aware semantic chunking and multi-tenant vector search for a UK startup." />
     <meta name="twitter:image" content="https://ikniz.id.vn/favicon.jpg" />
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "TechArticle",
-      "headline": "Enterprise Data Ingestion: Eliminating AI Hallucinations for a UK Startup",
+      "headline": "Enterprise Data Ingestion: Grounding AI Answers for a UK Startup",
       "description": "Architecting an automated, multi-stage RAG ingestion pipeline to process unstructured legal and financial documents safely across multi-tenant boundaries.",
       "author": {
         "@type": "Person",
@@ -53,7 +53,7 @@
     <main class="cs-article">
       <header class="cs-hero reveal">
         <span class="b2b-case-type">Data Infrastructure & RAG</span>
-        <h1 class="cs-title">Enterprise Data Ingestion: Eliminating AI Hallucinations for a UK Startup</h1>
+        <h1 class="cs-title">Enterprise Data Ingestion: Grounding AI Answers for a UK Startup</h1>
         <p class="cs-subtitle">Architecting an automated, multi-stage RAG (Retrieval-Augmented Generation) ingestion pipeline to process unstructured legal and financial documents safely across multi-tenant boundaries.</p>
         <div class="cs-meta">
           <div class="cs-meta-item">
@@ -72,7 +72,7 @@
         <p>A fast-growing UK startup (Visual Hive) recognized that their enterprise clients were drowning in unstructured PDFs, financial statements, and complex compliance reports. To build an intelligent assistant capable of querying these documents, they initially experimented with standard, off-the-shelf RAG wrappers (like basic LangChain document loaders).</p>
         <p>The result was disastrous for a B2B setting. Naive text splitters broke the context of complex legal tables in half. The AI models consistently hallucinated critical financial figures because they retrieved the wrong chunks of text. In enterprise software, an AI hallucinating a liability clause or misreading a multi-column financial statement is a dealbreaker.</p>
 
-        <h2>Architecting a Zero-Hallucination Pipeline</h2>
+        <h2>Architecting a Hallucination-Resistant Pipeline</h2>
         <p>They needed an engineer who could move past simple API calls and build a robust, deterministic data engineering infrastructure. I designed a multi-stage, asynchronous pipeline:</p>
 
         <h3>1. The Control Plane (Next.js & Directus)</h3>
@@ -90,7 +90,7 @@
 
         <h2>Business Impact</h2>
         <div class="cs-impact-box">
-          <p>By treating RAG as a rigorous data engineering problem rather than a simple prompt-engineering trick, the startup deployed a secure, multi-tenant AI search engine. Automation of document processing increased by 90%, and the system achieved <strong>zero hallucinations</strong> on ground-truth retrieval, allowing the founding team to confidently secure enterprise pilot contracts.</p>
+          <p>By treating RAG as a rigorous data engineering problem rather than a simple prompt-engineering trick, the startup deployed a secure, multi-tenant AI search engine. Automation of document processing increased by 90%, and the system produced <strong>no fabricated answers on ground-truth retrieval evaluations</strong>, allowing the founding team to confidently secure enterprise pilot contracts.</p>
         </div>
       </div>
       

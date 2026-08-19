@@ -20,7 +20,7 @@ const caseStudies = [
     type: "B2B / B2C Platform Architecture",
     tagline: "High-concurrency matching engine connecting universities and enterprise projects.",
     metrics: [
-      { value: "0 Latency", label: "Real-time Matching" },
+      { value: "10k+", label: "Concurrent Connections" },
       { value: "Microservices", label: "Go & Python" }
     ],
     problem: "A monolithic legacy architecture couldn't handle the complex, real-time matching of thousands of student profiles with enterprise project requirements without severe latency.",
@@ -36,13 +36,13 @@ const caseStudies = [
     tagline: "Automated unstructured document ingestion and RAG-ready vector indexing.",
     metrics: [
       { value: "90%", label: "Automation Increase" },
-      { value: "Zero", label: "Hallucinations" }
+      { value: "Multi-Tenant", label: "Vector Isolation" }
     ],
     problem: "A UK startup faced a critical bottleneck: manually parsing complex, unstructured documents. Standard RAG pipelines suffered from context fragmentation and dangerous AI hallucinations in enterprise settings.",
     solution: "Built a multi-stage, asynchronous ingestion pipeline using Next.js and Python (FastAPI). Implemented semantic chunking and dynamic query routing with Qdrant vector database to ensure absolute data isolation (multi-tenant RAG) and semantic accuracy.",
-    outcome: "Eliminated manual data entry, providing an enterprise-grade, hallucination-free retrieval system that drastically reduced API inference costs.",
+    outcome: "Eliminated manual data entry, providing an enterprise-grade grounded retrieval system with hallucination checks that drastically reduced API inference costs.",
     tech: ["Next.js", "Python", "FastAPI", "Qdrant", "Prisma", "Directus"],
-    links: { code: "https://github.com/iknizzz1807/data-ingestion" }
+    links: null
   },
   {
     slug: "jarvis",
